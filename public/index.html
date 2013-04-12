@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Agencia Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Herramienta de gestion de relaciones con los clientes.">
+    <meta name="author" content="TVCable">
+
+    <!-- Le styles -->
+    <link href="//netdna.bootstrapcdn.com/bootswatch/2.3.1/cerulean/bootstrap.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="http://www.highcharts.com/highslide/highslide.css" />
+    <link href="/css/agenciadigital.css" rel="stylesheet" />
+
+    <style>
+      body {
+      padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="../assets/js/html5shiv.js"></script>
+        <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <! -- Cabecera con opciones de navegacion -->
+       <div class="navbar navbar-fixed-top">
+         <div class="navbar-inner">
+           <div class="container">
+             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </a>
+             <a class="brand" href="../">Agencia Digital</a>
+             <div class="nav-collapse collapse pull-right" id="main-menu">
+               <ul class="nav" id="main-menu-left">
+                 <li class="dropdown" id="preview-menu">
+                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Eduardo Raad <b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                     <li><a target="_blank" href="bootstrap.min.css">Cambiar contrase&ntilde;a</a></li>
+                     <li><a target="_blank" href="bootstrap.css">Salir</a></li>
+                     <li class="divider"></li>
+                     <li><a target="_blank" href="#">Datilmedia S.A.</a></li>
+                     <li class="divider"></li>
+                     <li><a target="_blank" href="#">Cerebrum S.A.</a></li>
+                     <li class="divider"></li>
+                   </ul>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <!-- Primer plano de la herramienta -->
+       <div class="container">
+         <div class="row">
+
+           <!-- Opciones de navegacion a la izquierda -->
+           <div class="span3">
+             <ul class="nav nav-tabs nav-stacked">
+               <li class="active"><a href="#inicio"><i class="icon-home icon-2x"></i> <span class="nav-big">Inicio</span></a></li>
+               <li><a href="#facturas"><i class="icon-leaf icon-2x"></i> <span class="nav-big">Facturas <span class="badge badge-success">1</span></span></a></li>
+               <li><a href="#servicios"><i class="icon-th-large icon-2x"></i> <span class="nav-big">Servicios</span></a></li>
+               <li><a href="#notificaciones"><i class="icon-inbox icon-2x"></i> <span class="nav-big">Notificaciones <span class="badge badge-warning">2</span></span></a></li>
+               <li><a href="#wiki"><i class="icon-info-sign icon-2x"></i> <span class="nav-big">Wiki</span></a></li>
+               <li><a href="#estado-servicio"><i class="icon-question-sign icon-2x"></i> <span class="nav-big">Ayuda</span></a></li>
+             </ul>
+           </div>
+
+           <!-- Despliegue de contenido -->
+           <div class="span9">
+
+             <!-- Promociones -->
+             <section id="promociones">
+               <h3>Promociones</h3>
+               <div id="myCarousel" class="carousel slide">
+                 <ol class="carousel-indicators">
+                   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                   <li data-target="#myCarousel" data-slide-to="1"></li>
+                   <li data-target="#myCarousel" data-slide-to="2"></li>
+                   <li data-target="#myCarousel" data-slide-to="3"></li>
+                   <li data-target="#myCarousel" data-slide-to="4"></li>
+                 </ol>
+                 <!-- Carousel items -->
+                 <div class="carousel-inner">
+                   <div class="active item"><img src="/images/promo1.jpg"/></div>
+                   <div class="item"><img src="/images/promo2.jpg"/></div>
+                   <div class="item"><img src="/images/promo4.jpg"/></div>
+                   <div class="item"><img src="/images/promo5.jpg"/></div>
+                   <div class="item"><img src="/images/promo6.jpg"/></div>
+                 </div>
+                 <!-- Carousel nav -->
+                 <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                 <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+               </div>
+             </section>
+
+             <!-- Facturacion -->
+             <section id="facturacion">
+               <h3>Facturaci&oacute;n</h3>
+               <div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+             </section>
+
+             <!-- Estado de los servicios -->
+             <section id="estado-servicios">
+               <h3>Estado de los servicios <small>03/04/2013 11:00:22</small></h3>
+               <table class="table table-hover">
+                 <tr>
+                   <td><h4><i class="icon-ok icon status-go"></i> Internet <small>Operando con normalidad</small></h4></td>
+                 </tr>
+                 <tr>
+                   <td><h4><i class="icon-ok icon status-go"></i> Televisi&oacute;n <small>Operando con normalidad</small></h4></td>
+                 </tr>
+                 <tr>
+                   <td><h4><i class="icon-ok icon status-go"></i> Telefon&iacute;a <small>Operando con normalidad</small></h4></td>
+                 </tr>
+               </table>
+             </section>
+
+             <!-- Facturas
+                  <section id="transitions">
+                    <div class="page-header">
+                      <h1>Transitions <small>bootstrap-transition.js</small></h1>
+                    </div>
+                    <h3>About transitions</h3>
+                    <p>For simple transition effects, include <strong>bootstrap-transition.js</strong> once alongside the other JS files. If you're using the compiled (or minified) <strong>bootstrap.js</strong>, there is no need to include this—it's already there.</p>
+                    <h3>Use cases</h3>
+                    <p>A few examples of the transition plugin:</p>
+                    <ul>
+                      <li>Sliding or fading in modals</li>
+                      <li>Fading out tabs</li>
+                      <li>Fading out alerts</li>
+                      <li>Sliding carousel panes</li>
+                    </ul>
+                  </section>
+                  -->
+           </div>
+         </div>
+         <div class="row">
+           <div class="span12">
+             <hr></hr>
+             <p class="text-center">
+               <small><span class="muted">&copy; 2013 Grupo TVCable.</span> <a href="#politica-privacidad">Pol&iacute;tica de privacidad</a>.</small>
+             </p>
+           </div>
+         </div>
+       </div>
+
+       <!-- Javascript -->
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+       <script src="http://code.highcharts.com/highcharts.js"></script>
+       <script src="http://code.highcharts.com/modules/data.js"></script>
+       <script src="http://code.highcharts.com/modules/exporting.js"></script>
+       <script src="/js/agenciadigital.js"></script>
+
+       <!-- Additional files for the Highslide popup effect -->
+       <script type="text/javascript" src="http://www.highcharts.com/highslide/highslide-full.min.js"></script>
+       <script type="text/javascript" src="http://www.highcharts.com/highslide/highslide.config.js" charset="utf-8"></script>
+
+</body>
+</html>

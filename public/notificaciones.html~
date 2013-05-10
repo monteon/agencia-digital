@@ -54,7 +54,7 @@
                      <li class="divider"></li>
                      <li><a target="_blank" href="#">Datilmedia S.A. (XXXXXXXXX4001)</a></li>
                      <li class="divider"></li>
-                     <li><a target="_blank" href="#">Cerebrum S.A. (XXXXXXXXX6001)</a></li>
+                     <li><a target="_blank" href="#">Cerebrum S.A. XXXXXXXXX6001</a></li>
                      <li class="divider"></li>
                    </ul>
                  </li>
@@ -74,7 +74,7 @@
                <li class="active"><a href="#inicio"><i class="icon-home icon-2x"></i> <span class="nav-big">Inicio</span></a></li>
                <li><a href="#facturas"><i class="icon-leaf icon-2x"></i> <span class="nav-big">Facturas <span class="badge badge-success">1</span></span></a></li>
                <li><a href="#servicios"><i class="icon-th-large icon-2x"></i> <span class="nav-big">Servicios</span></a></li>
-               <li><a href="notificaciones.html"><i class="icon-inbox icon-2x"></i> <span class="nav-big">Notificaciones <span class="badge badge-warning">2</span></span></a></li>
+               <li><a href="#notificaciones"><i class="icon-inbox icon-2x"></i> <span class="nav-big">Notificaciones <span class="badge badge-warning">2</span></span></a></li>
                <li><a href="#wiki"><i class="icon-info-sign icon-2x"></i> <span class="nav-big">Wiki</span></a></li>
                <li><a href="#estado-servicio"><i class="icon-question-sign icon-2x"></i> <span class="nav-big">Ayuda</span></a></li>
              </ul>
